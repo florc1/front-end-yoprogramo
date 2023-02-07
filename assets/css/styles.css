@@ -14,3 +14,9 @@
 .nav-link:hover {
     color: #bcc9c6;
 }
+
+}
+.bg{
+    background-image: url(assets/images/viajar.jpg);
+    background-position: center center;
+}

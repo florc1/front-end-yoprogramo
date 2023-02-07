@@ -17,8 +17,97 @@
      <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 <body>
-    <!--aqui comienza el formulario-->
-    <div class="container"
+    <!--aqui comienza la pagina de login en dos columnas-->
+
+    <div class="container">
+        <div class="row">
+
+            <!--primer columna-->
+            
+            <div class="col">
+                
+
+            </div>
+
+            <!-- segunda columna-->
+
+            <div class="col">
+                <div class="text-end">
+                    <img src="assets/images/valija web Logo.png" width="48" alt="">
+                </div>
+
+                <h2 class="fw-bold text-center py-5">Bienvenidos</h2>
+
+                <!--LOGIN-->
+
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" name=email>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">password</label>
+                        <input type="password" class="form-control" name=password>
+                    </div>
+
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-imput">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+
+                    </div>
+
+                    <div class="my-3">
+                        <span>¿No tienes cuenta? <a href="#">Regístrate</a></span> <br>
+                        <span><a href="#">Recuperar password</a></span>
+                    </div>
+                </form>
+
+                <!--LOGIN CON REDES SOCIALES-->
+
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesión</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-primary w-100 my-1">
+                                <div class="row" align-items-center d-inline-block>
+                                    <div class="col-2">
+                                        <img src="assets/images/fb_flaticon.png" width="22" alt="">
+                                    </div>
+
+                                    <div class="col-10 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+        
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-danger w-100 my-1">
+                                <div class="row" align-items-center>
+                                    <div class="col-2">
+                                        <img src="assets/images/logo_google.png" width="22" alt="">
+                                    </div>
+
+                                    <div class="col-10 text-center">
+                                        Google
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
 
 
 
