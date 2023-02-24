@@ -20,6 +20,7 @@
     <!--esto es un comentario en html-->
     <!--<div>es un espacio para comentar Ctrl y } </div>-->
 
+    
     <!--aqui comienza mi navbar o barra de navegacion-->
     <section class="barranav">
 
@@ -38,14 +39,14 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav">
               
-                <li class="nav-item">
-                <a class="nav-link m-2" aria-current="page" href="login.html">LOGIN</a>
+                <li class="nav-item item-login">
+                <a class="nav-link" aria-current="page" href="login.html">LOGIN</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link m-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     SOCIAL MEDIA
                   </a>
                   <ul class="dropdown-menu">
@@ -56,7 +57,7 @@
                 </li>
               
                 <li class="nav-item">
-                  <a class="nav-link m-2"aria-current="page" href="contacto.html">CONTACTO</a>
+                  <a class="nav-link"aria-current="page" href="contacto.html">CONTACTO</a>
                 </li>
               </ul>
             
@@ -68,46 +69,71 @@
     <!--aca termina la nav-->
 
     <!--aqui empieza mi banner-->
-    <section class="mibanner">
-      <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/images/jeff-sheldon-9dI3g8owHiI-unsplash_recortada.jpg" class="d-block w-100" 
-              alt="imagen de escritorio" >
-            </div>
-          </div>
+    <section class="banner">
+      <div id="capa2">
+        <img src="assets/images/jeff-sheldon-9dI3g8owHiI-unsplash_recortada.jpg" class="w-100" 
+        alt="imagen de escritorio" >
       </div>
 
+      <div id="capa1" class="rounded-circle img-fluid"> 
+        <img src="assets/images/FotoPerfil_1.jpg" class="rounded-circle img-fluid" alt="foto perfil flor"> 
+      </div>
+    
     </section>
     <!--aca termina mi banner-->
 
-    
+
     <!--aqui empiza mi profile card perfil-->
     <section class="perfil">
+      <!--columnas de boton de editar y borrar foto perfil-->
+      <div class="container">
+        <div class="row edicionmodalfoto">
+          <!-- Button trigger modal editar foto-->
+          <div class="col">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1"> 
+                <i class="fa-solid fa-pencil"></i>
+              </button>
+          </div>
+          <!--final modal editar foto-->
 
-      <!--COLUMNA FOTO-->
+          <!-- Button trigger modal eliminar foto-->
+          <div class="col">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal2">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+          </div> 
+          <!--final modal eliminar foto-->            
+        </div>
+      </div>
+      <!--final columnas de editar y borrar-->
+
+
+      <!--comienzo de perfil-->
       <div class="container text-center">
         <div class="row">
+          <!--COLUMNA NOMBRE PERFIL-->
           <div class="col-4 text-center">
-            <img alt="" src="assets/images/FotoPerfil_1_redimencionada.jpg" 
-            class="rounded-circle img-fluid" 
-            title="Florencia A. Campagnoli" alt="foto de perfil">
-
-            <h4 class="Nombre fw-normal">Florencia A. Campagnoli</h4>
-            <h4 class="Nombre fw-normal">Desarrolladora Web full stack</h4>
-            <h4 class="Nombre fw-normal">Licenciada en Turismo</h4>
+            <div class="Nombre fw-normal datosperfil">
+              <h4> Florencia A. Campagnoli</h4> <br>
+              <p>Desarrolladora Web full stack <br>
+              Licenciada en Turismo</p>
+            </div>
           </div>
 
           <!--COLUMNA DESCRIPCION PERFIL-->
           <div class="col-8">
-            <h4 class="sobremi">Hola, soy Guía, Técnico y Licenciada en Turismo, actualmente 
-              estoy cursando #ArgentinaPrograma4.0 asique como pueden ver mis conocimientos 
-              de tecnología son muy buenos. Quiero trabajar con turismo y tegnologia, y asi 
-              encontrar nuevas formas de mejorar los sistemas para que se maximize sistema de 
-              fronto office y back office tanto en la web como en turismo.</h4>
+            <h5 class="Nombre fw-normal sobremi ms-5 me-5">Hola! soy Guía, Técnico y Licenciada en Turismo,
+              actualmente estoy cursando # Argentina Programa 4.0 asique como pueden ver mis conocimientos 
+              de tecnología son muy buenos. Ademas de esériencia como educadora de secundario en la materia 
+              de Geografia, puedo aportar en tegnoligia, herramientas que ayuden en la solucion de problemas, 
+              a las empresas hoy con su dia a dia, mejorando su rendimiento. Puedo trabajar tanto con turismo, 
+              tegnologia, y enseñanza, para encontrar nuevas formas de mejorar los sistemas y que se maximize 
+              front office y back office por ejemplo o base de datos, con herramientas como HTML, bootstrap o 
+              java.</h5>
           </div>
         </div>
-
+      </div>
+       
     </section>
   <!--final de mi profile card perfil-->
   
@@ -117,12 +143,12 @@
     <!--COLUMNAS EXPERIENCIA-->
 
     <!--columna 1 EXPERIENCIA 1-->
-    <h2 class="fw-bold experiencia pt-5">EXPERIENCIA</h2>
+    <h2 class="Nombre fw-bold experiencia pt-5">EXPERIENCIA</h2>
 
     <div class="row gerente">
   
       <div class="col">
-        <h3 class="fw-normal gerente pt-5 mt-2">Gerente Administrativo</h3>
+        <h3 class="Nombre fw-normal pt-5 mt-2">Gerente Administrativo</h3>
       </div>
 
       <div class="col">
@@ -135,7 +161,7 @@
     <div class="row docente">
         
       <div class="col">
-        <h3 class="fw-normal gerente pt-5 mt-2">Docente en Cs. Sociales Geografía</h3>
+        <h3 class="Nombre fw-normal pt-5 mt-2">Docente de Cs. Sociales en Geografía</h3>
       </div>
 
       <div class="col">
@@ -179,16 +205,68 @@
 
   <!-- aqui comienzan skills-->
   <section class="skills">
+    <h1 class="Nombre fw-bold text-center pt-5">SKILLS-HABILIDADES</h1> 
 
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <h2>HTML <i class="fa-brands fa-html5"></i></h2>
+        <div class="progress-circle progress-80"><span>80</span></div>
+      </div>
+      
+      <div class="col">
+        <h2>CSS <i class="fa-brands fa-css3-alt"></i></h2>
+        <div class="progress-circle progress-80"><span>80</span></div>
+      </div>
+
+      <div class="col">
+        <h2>BOOTSTRAP <i class="fa-brands fa-bootstrap"></i></i></h2>
+        <div class="progress-circle progress-80"><span>80</span></div>
+      </div>
+
+      <div class="col">
+        <h2>ANGULAR <i class="fa-brands fa-angular"></i></h2>
+        <div class="progress-circle progress-80"><span>80</span></div>
+      </div>
+    </div>
+
+    <h1 class="Nombre fw-bold text-center mt-5 pt-5"> SOFT-SKILLS</h1>
+
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <h2>LIDERAZGO</h2>
+        <div class="progress-circle progress-80"><span>80</span></div>
+      </div>
+      
+      <div class="col">
+        <h2>RESILIENCIA</h2>
+        <div class="progress-circle progress-80"><span>80</span></div>
+      </div>
+
+      <div class="col">
+        <h2>PROACTIVIDAD</h2>
+        <div class="progress-circle progress-80"><span>80</span></div>
+      </div>
+
+      <div class="col">
+        <h2>EMPATÍA</h2>
+        <div class="progress-circle progress-80"><span>80</span></div>
+      </div>
+    </div>
   </section>
   <!-- finish skills-->
 
 
   <!-- aqui comienza proyectos-->
-  <section class="proyectos">
+  <section class="Proyectos">
+    
     <h2 class="fw-bold experiencia pt-5">PROYECTOS</h2>
 
-    <div class="row gerente">
+    <!--comumna proyecto 1-->
+    <div class="row pagmelli">
   
       <div class="col">
         <h3 class="fw-normal gerente pt-5 mt-2">Pagina Cabañas de las Mellizas</h3>
@@ -200,7 +278,7 @@
       
     </div>
 
-    <div class="row gerente">
+    <div class="row pagcurriculum">
   
       <div class="col">
         <h3 class="fw-normal gerente pt-5 mt-2">Pagina Curriculum Vitae</h3>
@@ -222,6 +300,54 @@
   </div>
 </section>
 <!--finish footer-->
+
+
+
+
+<!-- Modal 1 index-->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal1">Modal 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        esto es una ventana modal
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 index-->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Desea eliminar?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 
     
     <!--javascript de bootstrap-->

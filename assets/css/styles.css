@@ -16,33 +16,78 @@
     color: #bcc9c6;
 }
 
-/*fondo banner*/
-.banner {
-    background-image: url(../images/jeff-sheldon-9dI3g8owHiI-unsplash_recortada.jpg);
-    width: 100%;
-    height: 150vh;
-    background-repeat: no-repeat;
-    background-size: cover;  
-    position: relative;
+.nav-item {
+    width: 8rem;
+    text-align: center;
 }
+
+.nav-item.item-login {
+    width: 6rem;
+}
+
+/*fondo y foto del banner*/
+   #capa2 {
+    position:absolute;
+    z-index:0;
+   }
+
+   #capa1 { 
+    position:absolute;
+    z-index:1;
+    background-color:#FFFFFF;
+    top:300px;
+    left:200px;
+    width:200px;
+    height:auto;
+   }
+
+   .edicionmodalfoto {
+    position:absolute;
+    top:530px;
+    left:250px;
+    height:auto;
+    
+
+   }
 
 /*perfil curriculum*/
 .perfil {
     background-color: #00358E;
     color: #fff;
-    width: 100;
-    height: 50vh;
-    background-repeat: no-repeat;
+    height: 150vh;
+    
 }
 
-.sobremi {
-    margin-left: 20%;
-    margin-top: 12%;
+.datosperfil {
+    position:absolute;
+    border: 1px solid #fff;
+    padding: 2rem;
+    top:600px;
+    left:150px;
+    height:auto;
+    
 }
+
+
+.sobremi {
+    position:absolute;
+    margin-top: 35%;
+    margin-left: 0%;
+    text-align: justify;
+    border: 1px solid #fff;
+    padding: 2rem;
+    
+    background-color: #8b8b8b;
+}
+
+
 
 /*aptitudes de educacion y experiencia*/
 section.aptitude {
-    background-image: url(../images/nasa-Q1p7bh3SHj8-unsplash.jpg);
+    background-image: linear-gradient(
+        rgb(0,0,0,0.2), 
+        rgba(0,0,0,0.4)
+        ), url(../images/nasa-Q1p7bh3SHj8-unsplash.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -82,19 +127,80 @@ section.skills {
     background-color: #00358E;
     color: #fff;
     width: 100;
-    height: 150vh;
+    height: 100vh;
     background-repeat: no-repeat;
 }
+  
+  h2 {
+    color: #63B8FF;
+    text-align: center; }
+  
+  .progress-circle {
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ebebeb; }
+  
+  .progress-circle:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-animation: colorload 2s;
+    animation: colorload 2s; }
+  
+  .progress-circle span {
+    font-size: 1rem;
+    color: #8b8b8b;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: -45px;
+    margin-top: -45px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1; }
+  
+  .progress-circle span:after {
+    content: "%";
+    font-weight: 600;
+    color: #8b8b8b; }
+
+    .progress-circle.progress-80:after {
+    background-image: linear-gradient(18deg, #66b8ff 50%, transparent 50%, transparent), 
+    linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
+
+
 
 /*proyectos en los que trabajo*/
-section.proyectos {
-    background-image: url(../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
+section.Proyectos {
+    background-image: linear-gradient(
+        rgb(0,0,0,0.2), 
+        rgba(0,0,0,0.4)
+        ), url(../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     color: #fff;
     background-size: cover;  
     position: relative; 
+}
+
+.proyectos {
+    margin-left: 5%;
+}
+
+.pagmelli {
+    margin-top: 8%;
 }
 
 section.footer {
@@ -104,6 +210,11 @@ section.footer {
     width: 100;
     height: 15vh;
     background-repeat: no-repeat;
+}
+
+/*fondo ventanas modal en index*/
+.modal-content {
+    background-color: #66B8FF;
 }
 
 /*pagina de contacto*/
