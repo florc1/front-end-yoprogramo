@@ -36,60 +36,67 @@
     z-index:1;
     background-color:#FFFFFF;
     top:300px;
-    left:200px;
+    left:190px;
     width:200px;
     height:auto;
    }
-
-   .edicionmodalfoto {
-    position:absolute;
-    top:530px;
-    left:250px;
-    height:auto;
-    
-
-   }
+   
 
 /*perfil curriculum*/
 .perfil {
     background-color: #00358E;
     color: #fff;
-    height: 150vh;
-    
+    height: 130vh;
+}
+
+.edicionmodalfoto {
+    position:absolute;
+    top:530px;
+    left:235px;
+    height:auto;
+   }
+
+.edicionmodalnombres {
+    position:absolute;
+    top:810px;
+    left:220px;
+    height:auto;
+}
+
+.edicionmodalsobremi {
+    position:absolute;
+    top:810px;
+    left:860px;
+    height:auto;
 }
 
 .datosperfil {
     position:absolute;
     border: 1px solid #fff;
     padding: 2rem;
-    top:600px;
-    left:150px;
+    top:587px;
+    left:120px;
     height:auto;
-    
 }
-
 
 .sobremi {
     position:absolute;
-    margin-top: 35%;
-    margin-left: 0%;
+    margin-top: 410px;
+    margin-left: 0px;
     text-align: justify;
     border: 1px solid #fff;
     padding: 2rem;
-    
-    background-color: #8b8b8b;
 }
 
 
-
-/*aptitudes de educacion y experiencia*/
+/* experiencia*/
 section.aptitude {
     background-image: linear-gradient(
         rgb(0,0,0,0.2), 
         rgba(0,0,0,0.4)
         ), url(../images/nasa-Q1p7bh3SHj8-unsplash.jpg);
     width: 100%;
-    height: 100vh;
+    height: 160vh;
     background-repeat: no-repeat;
     color: #fff;
     background-size: cover;  
@@ -97,17 +104,52 @@ section.aptitude {
 }
 
 .experiencia {
-    margin-left: 5%;
+    margin-left: 0.6rem;
+    border: 1px solid #424242;
+    padding: 1rem;
+    width: 18rem;
+    background-color: #424242;
 }
 
+
+
 .gerente {
-    margin-left: 8%
+    margin-left: 0rem;
+}
+
+.gerenteadmin {
+    border: 1px solid #424242;
+    padding: 1rem;
+    width: 20rem;
+    background-color: #424242;
+}
+
+.gerenciayrecepcion {
+    border: 1px solid #424242;
+    width: 40rem;
+    background-color: #424242;
+}
+
+.complejocab {
+    margin-top: 0.9rem;
+    border: 1px solid #424242;
+    width: 40rem;
+    background-color: #424242;
 }
 
 .docente {
     padding-bottom: 5%;
-    margin-left: 8% 
+    margin-left: 0rem;
 }
+
+.profegeo {
+    border: 1px solid #424242;
+    padding: 1rem;
+    width: 22rem;
+    background-color: #424242;
+}
+
+/* educacion*/
 
 .educacion {
     margin-top: 10%;

@@ -105,7 +105,7 @@
           <!--final modal eliminar foto-->            
         </div>
       </div>
-      <!--final columnas de editar y borrar-->
+      <!--final columnas de editar y borrar foto-->
 
 
       <!--comienzo de perfil-->
@@ -113,11 +113,33 @@
         <div class="row">
           <!--COLUMNA NOMBRE PERFIL-->
           <div class="col-4 text-center">
-            <div class="Nombre fw-normal datosperfil">
-              <h4> Florencia A. Campagnoli</h4> <br>
-              <p>Desarrolladora Web full stack <br>
-              Licenciada en Turismo</p>
-            </div>
+              <div class="Nombre fw-normal datosperfil">
+                <h4> Florencia A. Campagnoli</h4> <br>
+                <p>Desarrolladora Web full stack <br>
+                Licenciada en Turismo</p>
+              </div>
+
+              <!--columnas de boton de editar y borrar nombre en perfil-->
+              <div class="container">
+                <div class="row edicionmodalnombres">
+                  <!-- Button trigger modal editar nombres-->
+                  <div class="col">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1"> 
+                      <i class="fa-solid fa-pencil"></i>
+                    </button>
+                  </div>
+                  <!--final modal editar nombres-->
+
+                  <!-- Button trigger modal eliminar nombres-->
+                  <div class="col">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal2">
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </div> 
+                  <!--final modal eliminar nombres-->            
+                </div>
+              </div>
+              <!--final columnas de editar y borrar nombres-->
           </div>
 
           <!--COLUMNA DESCRIPCION PERFIL-->
@@ -129,77 +151,107 @@
               a las empresas hoy con su dia a dia, mejorando su rendimiento. Puedo trabajar tanto con turismo, 
               tegnologia, y enseñanza, para encontrar nuevas formas de mejorar los sistemas y que se maximize 
               front office y back office por ejemplo o base de datos, con herramientas como HTML, bootstrap o 
-              java.</h5>
+              java.
+            </h5>
+            
+            <!--columnas de boton de editar y borrar sobremi en perfil-->
+            <div class="container">
+              <div class="row edicionmodalsobremi">
+                <!-- Button trigger modal editar sobremi-->
+                <div class="col">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1"> 
+                    <i class="fa-solid fa-pencil"></i>
+                  </button>
+                </div>
+                <!--final modal editar sobremi-->
+
+                <!-- Button trigger modal eliminar sobremi-->
+                <div class="col">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div> 
+                <!--final modal eliminar sobremi-->            
+              </div>
+            </div>
+            <!--final columnas de editar y borrar sobremi-->
           </div>
+
         </div>
-      </div>
-       
+      </div>       
     </section>
-  <!--final de mi profile card perfil-->
+    <!--final de mi profile card perfil-->
   
 
-  <!-- aqui comienza experiencia y educacion card-->
-  <section class="aptitude">
-    <!--COLUMNAS EXPERIENCIA-->
+    <!-- aqui comienza experiencia y educacion card-->
+    <section class="aptitude">
+      <!--COLUMNAS EXPERIENCIA-->
 
-    <!--columna 1 EXPERIENCIA 1-->
-    <h2 class="Nombre fw-bold experiencia pt-5">EXPERIENCIA</h2>
+      <!--columna 1 EXPERIENCIA 1-->
+      <div class="container pt-5">
+        <h1 class="Nombre fw-bold experiencia">EXPERIENCIA</h1>
 
-    <div class="row gerente">
-  
-      <div class="col">
-        <h3 class="Nombre fw-normal pt-5 mt-2">Gerente Administrativo</h3>
+        <div class="row gerente pt-5">
+        
+          <div class="col text-center">
+            <h3 class="Nombre fw-normal gerenteadmin">Gerente Administrativo</h3>
+          </div>
+
+          <div class="col text-center">
+            <h5 class="Nombre fw-normal ps-2 gerenciayrecepcion">Gerencia y recepción ------- desde 2010 - 
+              Actualidad</h5>
+            <h5 class="Nombre fw-normal ps-2 complejocab">Complejo Cabañas de las Mellizas - Villa Carlos Paz</h5>            
+          </div>
+
+        </div>
+
+        <!--columna 2 EXPERIENCIA 2-->
+        <div class="row docente pt-5">
+
+          <div class="col text-center">
+            <h3 class="Nombre fw-normal profegeo">Profesora de secundario</h3>
+          </div>
+
+          <div class="col text-center">
+            <h5 class="Nombre fw-normal ps-2 gerenciayrecepcion">Cátedra de Geografía ------- desde 2021 - 
+              Marzo 2022</h5>
+            <h5 class="Nombre fw-normal ps-2 complejocab">I.P.E.M. N° 190 Dr. P. Carande Carro - Villa Carlos Paz</h5>            
+          </div>
+
+        </div>
+
       </div>
+      <!--COLUMNAS EDUCACION-->
 
-      <div class="col">
-        <h4 class="Nombre fw-normal pt-5 mt-2">Complejo Cabañas de las Mellizas 2010 - Actualidad</h4>
-      </div>
+        <!--columna 1 TITULO EDUCACION 1-->
+        <h1 class="fw-bold educacion mt-5 pt-5">EDUCACIÓN</h1>
+
+        <div class="row terciario">
+        
+          <div class="col">
+            <h3 class="fw-normal pt-5 mt-2">Técnico y Guía Superior en Turismo</h3>
+          </div>
+        
+          <div class="col">
+            <h4 class="Nombre fw-normal pt-5 mt-2">ISAUI Inst. Sup. A. U. Illia 2014 - 2016</h4>
+          </div>
+
+        </div>
       
-    </div>
+        <!--columna 2 TITULO EDUCACION 2-->
+        <div class="row licenciatura">
 
-    <!--columna 2 EXPERIENCIA 2-->
-    <div class="row docente">
+          <div class="col">
+            <h3 class="fw-normal pt-5 mt-2">Licencitura en Turismo</h3>
+          </div>
         
-      <div class="col">
-        <h3 class="Nombre fw-normal pt-5 mt-2">Docente de Cs. Sociales en Geografía</h3>
-      </div>
+          <div class="col">
+            <h4 class="Nombre fw-normal pt-5 mt-2">UPC Univ. Provincia de Córdoba 2017 - 2022</h4>
+          </div>
 
-      <div class="col">
-        <h4 class="Nombre fw-normal pt-5 mt-2">IPEM 190 Dr. P. Carande Carro 2021 - 2022</h4>
-      </div>
-      
-    </div>
-    <!--COLUMNAS EDUCACION-->
+        </div>
 
-      <!--columna 1 TITULO EDUCACION 1-->
-      <h2 class="fw-bold educacion mt-5 pt-5">EDUCACIÓN</h2>
-
-      <div class="row terciario">
-    
-        <div class="col">
-          <h3 class="fw-normal pt-5 mt-2">Técnico y Guía Superior en Turismo</h3>
-        </div>
-  
-        <div class="col">
-          <h4 class="Nombre fw-normal pt-5 mt-2">ISAUI Inst. Sup. A. U. Illia 2014 - 2016</h4>
-        </div>
-        
-      </div>
-  
-      <!--columna 2 TITULO EDUCACION 2-->
-      <div class="row licenciatura">
-          
-        <div class="col">
-          <h3 class="fw-normal pt-5 mt-2">Licencitura en Turismo</h3>
-        </div>
-  
-        <div class="col">
-          <h4 class="Nombre fw-normal pt-5 mt-2">UPC Univ. Provincia de Córdoba 2017 - 2022</h4>
-        </div>
-        
-      </div>
-
-  </section>
+    </section>
   <!--finish experiencia y educacion card-->
 
 
