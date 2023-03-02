@@ -19,7 +19,6 @@
 <body>
     <!--esto es un comentario en html-->
     <!--<div>es un espacio para comentar Ctrl y } </div>-->
-
     
     <!--aqui comienza mi navbar o barra de navegacion-->
     <section class="barranav">
@@ -32,11 +31,11 @@
                   </a>
                 </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-            aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
@@ -82,15 +81,36 @@
     </section>
     <!--aca termina mi banner-->
 
-
     <!--aqui empiza mi profile card perfil-->
     <section class="perfil">
       <!--columnas de boton de editar y borrar foto perfil-->
       <div class="container">
-        <div class="row edicionmodalfoto">
+        <div class="row modalbanner">
+          <!-- Button trigger modal editar banner-->
+          <div class="col">
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal3"> 
+                <i class="fa-solid fa-pencil"></i>
+              </button>
+          </div>
+          <!--final modal editar banner-->
+
+          <!-- Button trigger modal eliminar banner-->
+          <div class="col">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+          </div> 
+          <!--final modal eliminar banner-->            
+        </div>
+      </div>
+      <!--final columnas de editar y borrar banner-->
+
+      <!--columnas de boton de editar y borrar foto perfil-->
+      <div class="container">
+        <div class="row modalfoto">
           <!-- Button trigger modal editar foto-->
           <div class="col">
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1"> 
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal3"> 
                 <i class="fa-solid fa-pencil"></i>
               </button>
           </div>
@@ -108,7 +128,7 @@
       <!--final columnas de editar y borrar foto-->
 
 
-      <!--comienzo de perfil-->
+      <!--COMIENZO SECCION DEL PERFIL-->
       <div class="container text-center">
         <div class="row">
           <!--COLUMNA NOMBRE PERFIL-->
@@ -124,7 +144,7 @@
                 <div class="row edicionmodalnombres">
                   <!-- Button trigger modal editar nombres-->
                   <div class="col">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1"> 
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal4"> 
                       <i class="fa-solid fa-pencil"></i>
                     </button>
                   </div>
@@ -159,7 +179,7 @@
               <div class="row edicionmodalsobremi">
                 <!-- Button trigger modal editar sobremi-->
                 <div class="col">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1"> 
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal5"> 
                     <i class="fa-solid fa-pencil"></i>
                   </button>
                 </div>
@@ -181,7 +201,6 @@
       </div>       
     </section>
     <!--final de mi profile card perfil-->
-  
 
     <!-- aqui comienza experiencia y educacion card-->
     <section class="aptitude">
@@ -190,17 +209,82 @@
       <!--columna 1 EXPERIENCIA 1-->
       <div class="container pt-5">
         <h1 class="Nombre fw-bold experiencia">EXPERIENCIA</h1>
+        <!--columnas de boton de editar y borrar TITULO EXPERIENCIA-->
+        <div class="container">
+          <div class="row modaltituloexperiencia">
+            <!-- Button trigger modal editar titulo experiencia-->
+            <div class="col">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1"> 
+                  <i class="fa-solid fa-pencil"></i>
+                </button>
+            </div>
+            <!--final modal editar titulo experiencia-->
+  
+            <!-- Button trigger modal eliminar titulo experiencia-->
+            <div class="col">
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">
+                  <i class="fa-solid fa-trash"></i>
+              </button>
+            </div> 
+            <!--final modal eliminar titulo experiencia-->            
+          </div>
+        </div>
+        <!--final columnas de editar y borrar experiencia-->
 
+        <!--inicio row de 1° experiioencia-->
         <div class="row gerente pt-5">
         
           <div class="col text-center">
             <h3 class="Nombre fw-normal gerenteadmin">Gerente Administrativo</h3>
+            <!--columnas de boton de editar y borrar 1° experiencia-->
+            <div class="container">
+              <div class="row modalGerenteAdm">
+                <!-- Button trigger modal editar 1° experiencia-->
+                <div class="col">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1"> 
+                      <i class="fa-solid fa-pencil"></i>
+                    </button>
+                </div>
+                <!--final modal editar 1° experiencia-->
+              
+                <!-- Button trigger modal eliminar 1° experiencia-->
+                <div class="col">
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">
+                      <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div> 
+                <!--final modal eliminar 1° experiencia-->            
+              </div>
+            </div>
+            <!--final columnas de editar y borrar 1° experiencia-->
           </div>
 
           <div class="col text-center">
             <h5 class="Nombre fw-normal ps-2 gerenciayrecepcion">Gerencia y recepción ------- desde 2010 - 
               Actualidad</h5>
             <h5 class="Nombre fw-normal ps-2 complejocab">Complejo Cabañas de las Mellizas - Villa Carlos Paz</h5>            
+          
+          <!--columnas de boton de editar y borrar datos 1° experiencia-->
+          <div class="container">
+            <div class="row modalGerenciayRecepcion">
+              <!-- Button trigger modal editar datos 1° experiencia-->
+              <div class="col">
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal6"> 
+                    <i class="fa-solid fa-pencil"></i>
+                  </button>
+              </div>
+              <!--final modal editar datos 1° experiencia-->
+            
+              <!-- Button trigger modal eliminar datos 1° experiencia-->
+              <div class="col">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+              </div> 
+              <!--final modal eliminar datos 1° experiencia-->            
+            </div>
+          </div>
+          <!--final columnas de editar y borrar datos 1° experiencia-->
           </div>
 
         </div>
@@ -210,12 +294,54 @@
 
           <div class="col text-center">
             <h3 class="Nombre fw-normal profegeo">Profesora de secundario</h3>
+            <!--columnas de boton de editar y borrar 1° experiencia-->
+            <div class="container">
+              <div class="row modalProfeGeo">
+                <!-- Button trigger modal editar 1° experiencia-->
+                <div class="col">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1"> 
+                      <i class="fa-solid fa-pencil"></i>
+                    </button>
+                </div>
+                <!--final modal editar 1° experiencia-->
+              
+                <!-- Button trigger modal eliminar 1° experiencia-->
+                <div class="col">
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">
+                      <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div> 
+                <!--final modal eliminar 1° experiencia-->            
+              </div>
+            </div>
+            <!--final columnas de editar y borrar 1° experiencia-->
           </div>
 
           <div class="col text-center">
-            <h5 class="Nombre fw-normal ps-2 gerenciayrecepcion">Cátedra de Geografía ------- desde 2021 - 
+            <h5 class="Nombre fw-normal ps-2 catedrageografia">Cátedra de Geografía ------- desde 2021 - 
               Marzo 2022</h5>
-            <h5 class="Nombre fw-normal ps-2 complejocab">I.P.E.M. N° 190 Dr. P. Carande Carro - Villa Carlos Paz</h5>            
+            <h5 class="Nombre fw-normal ps-2 ipem190">I.P.E.M. N° 190 Dr. P. Carande Carro - Villa Carlos Paz</h5>            
+          <!--columnas de boton de editar y borrar datos 1° experiencia-->
+          <div class="container">
+            <div class="row modalCatedraGeografia">
+              <!-- Button trigger modal editar datos 1° experiencia-->
+              <div class="col">
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal6"> 
+                    <i class="fa-solid fa-pencil"></i>
+                  </button>
+              </div>
+              <!--final modal editar datos 1° experiencia-->
+            
+              <!-- Button trigger modal eliminar datos 1° experiencia-->
+              <div class="col">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+              </div> 
+              <!--final modal eliminar datos 1° experiencia-->            
+            </div>
+          </div>
+          <!--final columnas de editar y borrar datos 1° experiencia-->
           </div>
 
         </div>
@@ -356,31 +482,37 @@
 
 
 
-<!-- Modal 1 index-->
+
+
+<!-- Modal 1 EDITAR un titulo en index-->
 <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="modal1">Modal 1</h1>
+        <h1 class="modal-title fs-5" id="modal1">EDITAR</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        esto es una ventana modal
+        ¿Desea editar?
+        <div class="md-form mb-0">
+          <input type="text" id="subject" name="subject" class="form-control">
+          <label for="subject" class="">Titulo</label>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Modal 2 index-->
+<!-- Modal 2 ELIMINAR en index-->
 <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="modal2">Modal 2</h1>
+        <h1 class="modal-title fs-5" id="modal2">ELIMINAR</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -389,6 +521,110 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 3 formulario de edicion FOTO perfil-->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal3">EDITAR FOTO PERFIL</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿EDITAMOS?
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Selecciona Archivo</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 EDIAR nombre de perfil en index-->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal4">EDITAR</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Desea editar su Perfil?
+        <div class="md-form mb-0">
+          <input type="text" id="subject" name="subject" class="form-control">
+          <label for="subject" class="">Nombre Completo</label>
+        </div>
+        <div class="md-form mb-0">
+          <input type="text" id="subject" name="subject" class="form-control">
+          <label for="subject" class="">Profesión 1</label>
+        </div>
+        <div class="md-form mb-0">
+          <input type="text" id="subject" name="subject" class="form-control">
+          <label for="subject" class="">Profesión 2</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 formulario de edicion SobreMi perfil-->
+<div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal5">EDITAR DESCRIPCION PERFIL</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Perfil</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 EDIAR nombre de perfil en index-->
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal6">EDITAR</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Desea editar su Perfil?
+        <div class="md-form mb-0">
+          <input type="text" id="subject" name="subject" class="form-control">
+          <label for="subject" class="">Descriptión 1</label>
+        </div>
+        <div class="md-form mb-0">
+          <input type="text" id="subject" name="subject" class="form-control">
+          <label for="subject" class="">Descriptión 2</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
       </div>
     </div>
   </div>

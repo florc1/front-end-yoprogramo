@@ -41,6 +41,19 @@
     height:auto;
    }
    
+   .modalfoto {
+    position:absolute;
+    top:530px;
+    left:235px;
+    height:auto;
+   }
+
+   .modalbanner {
+    position:absolute;
+    top:350px;
+    left:1200px;
+    height:auto;
+   }
 
 /*perfil curriculum*/
 .perfil {
@@ -49,33 +62,19 @@
     height: 130vh;
 }
 
-.edicionmodalfoto {
-    position:absolute;
-    top:530px;
-    left:235px;
-    height:auto;
-   }
-
-.edicionmodalnombres {
-    position:absolute;
-    top:810px;
-    left:220px;
-    height:auto;
-}
-
-.edicionmodalsobremi {
-    position:absolute;
-    top:810px;
-    left:860px;
-    height:auto;
-}
-
 .datosperfil {
     position:absolute;
     border: 1px solid #fff;
     padding: 2rem;
     top:587px;
     left:120px;
+    height:auto;
+}
+
+.edicionmodalnombres {
+    position:absolute;
+    top:810px;
+    left:220px;
     height:auto;
 }
 
@@ -88,8 +87,14 @@
     padding: 2rem;
 }
 
+.edicionmodalsobremi {
+    position:absolute;
+    top:810px;
+    left:860px;
+    height:auto;
+}
 
-/* experiencia*/
+/* seccion experiencia*/
 section.aptitude {
     background-image: linear-gradient(
         rgb(0,0,0,0.2), 
@@ -103,6 +108,7 @@ section.aptitude {
     position: relative;  
 }
 
+/* titulo experiencia*/
 .experiencia {
     margin-left: 0.6rem;
     border: 1px solid #424242;
@@ -111,12 +117,20 @@ section.aptitude {
     background-color: #424242;
 }
 
+.modaltituloexperiencia {
+    position:absolute;
+    top:70px;
+    left:450px;
+    height:auto;
+}
 
-
+/* este gerente es solo paddin, por eso no tiene buttom trigger modal*/
 .gerente {
     margin-left: 0rem;
 }
+/* este gerente es solo paddin, por eso no tiene buttom trigger modal*/
 
+/* 1° experiencia*/
 .gerenteadmin {
     border: 1px solid #424242;
     padding: 1rem;
@@ -124,10 +138,24 @@ section.aptitude {
     background-color: #424242;
 }
 
+.modalGerenteAdm {
+    position:absolute;
+    top:270px;
+    left:230px;
+    height:auto;
+}
+
 .gerenciayrecepcion {
     border: 1px solid #424242;
     width: 40rem;
     background-color: #424242;
+}
+
+.modalGerenciayRecepcion {
+    position:absolute;
+    top:270px;
+    left:870px;
+    height:auto;
 }
 
 .complejocab {
@@ -137,17 +165,49 @@ section.aptitude {
     background-color: #424242;
 }
 
+/* 2° experiencia*/
 .docente {
     padding-bottom: 5%;
     margin-left: 0rem;
 }
 
 .profegeo {
+    margin-top: 3rem;
     border: 1px solid #424242;
     padding: 1rem;
     width: 22rem;
     background-color: #424242;
 }
+
+.modalProfeGeo {
+    position:absolute;
+    top:440px;
+    left:245px;
+    height:auto;
+}
+
+.catedrageografia {
+    margin-top: 3rem;
+    border: 1px solid #424242;
+    width: 40rem;
+    background-color: #424242;
+}
+
+.ipem190 {
+    margin-top: 0.9rem;
+    border: 1px solid #424242;
+    width: 40rem;
+    background-color: #424242;
+}
+
+.modalCatedraGeografia {
+    position:absolute;
+    top:440px;
+    left:870px;
+    height:auto;
+}
+
+
 
 /* educacion*/
 
@@ -169,7 +229,7 @@ section.skills {
     background-color: #00358E;
     color: #fff;
     width: 100;
-    height: 100vh;
+    height: 150vh;
     background-repeat: no-repeat;
 }
   
@@ -250,11 +310,11 @@ section.footer {
     background-color: #222326;
     color: #fff;
     width: 100;
-    height: 15vh;
+    height: 16vh;
     background-repeat: no-repeat;
 }
 
-/*fondo ventanas modal en index*/
+/*fondo ventanas modal 1 y 2 en index*/
 .modal-content {
     background-color: #66B8FF;
 }
